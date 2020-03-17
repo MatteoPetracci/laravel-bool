@@ -6,6 +6,7 @@
         <img src="{{$item['poster']}}" alt="">
         <h2>{{$item['name']}} ({{$item['age']}})</h2>
         <p>Lavora da {{$item['company']}} come {{$item['role']}}</p>
+        <p>{{$item['description']}}</p>
     @endforeach
 @endsection
 
