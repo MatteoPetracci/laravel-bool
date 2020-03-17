@@ -26,10 +26,13 @@ use Illuminate\Support\Facades\Route;
 // Primo argomento è l'url dove l'utende deve andare, come secondo argomento passo il controller e la funzione che mi serve
 // con ->name do un nome alla rotta
 
-//Home
+// Home
 Route::get('/', 'StaticPageController@index')->name('static_page.home');
 
 //Student
-Route::get('/students', 'StudentController@index')->name('student.index');
+Route::get('/students', 'StudentController@index')->name('student.home');
 
+// Show di studends
+Route::get('students/show/{id}', 'StudentController@show')->name('student.show');
 
+// Dopo aver creato le rotte creo i controller 
