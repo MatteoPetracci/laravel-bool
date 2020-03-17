@@ -5,8 +5,12 @@
 <header>
     @yield('header')
 </header>
-<main></main>
-<footer></footer>
+<main>
+    @yield('main')
+</main>
+<footer>
+    @yield('footer')
+</footer>
 
  @include('layouts.partials._footer')
 
