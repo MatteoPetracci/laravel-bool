@@ -68,7 +68,8 @@ nav {
     display: flex;
     flex-wrap: wrap;
     .card-student {
-        padding: 15px;
+        color: #1b3c59;
+        padding: 18px;
         width: 47%;
         background-color: white;
         border-radius: 10px;
@@ -88,7 +89,18 @@ nav {
         }
     }
     .description {
-        margin-top: 10px;
+        margin-top: 20px;
     }
+    .box-icon {
+        display: flex;
+        justify-content: flex-end;
+        margin: 20px 0 2px 0;
+
+        i {
+            color: #0078b5;
+            font-size: 1.5em;
+        }
+    }
+    
     }
 }

@@ -13,6 +13,9 @@
             </div>
         </div>
         <p class="description">{{$item['description']}}</p>
+        <div class="box-icon">
+            <i class="fab fa-linkedin"></i>
+        </div>
     </div>
     @endforeach
 </div>

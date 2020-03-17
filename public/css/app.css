@@ -77,7 +77,8 @@ nav .box-list ul li a {
 }
 
 .container .card-student {
-  padding: 15px;
+  color: #1b3c59;
+  padding: 18px;
   width: 47%;
   background-color: white;
   border-radius: 10px;
@@ -103,6 +104,17 @@ nav .box-list ul li a {
 }
 
 .container .card-student .description {
-  margin-top: 10px;
+  margin-top: 20px;
+}
+
+.container .card-student .box-icon {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0 2px 0;
+}
+
+.container .card-student .box-icon i {
+  color: #0078b5;
+  font-size: 1.5em;
 }
 
