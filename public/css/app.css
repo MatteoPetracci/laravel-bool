@@ -65,3 +65,15 @@ nav .box-list ul li a {
   padding: 10px 15px;
 }
 
+.container {
+  width: 70%;
+  margin: auto;
+  border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container .card-student {
+  width: 50%;
+}
+
