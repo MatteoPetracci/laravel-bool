@@ -24,9 +24,17 @@ class StudentController extends Controller
 
     public function show($id) 
     {
+        // Se l'id non esiste nell'array (students) faccio un abort e interrompo la pagina mostrando l'errore che voglio
         if (!array_key_exists($id, $this->students)) {
             abort('404');
         }
+
+        // Creo una variabile con dentro students (l'array) e la variabile id che è la posizione
+
+        $data = $this->students[$id];
+
+
+        return view('students.show', compact('data'));
     }
         // Configurazione tramite l'helper config 
         // Creo un file php nella cartella config
