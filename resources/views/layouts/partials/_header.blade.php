@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <title>Document</title>
 </head>
 <body>
@@ -19,7 +19,7 @@
                     <a href="">Corso</a>
                 </li>
                 <li>
-                    <a href="">Dopo Corso</a>
+                    <a href="{{route('student.home')}}">Dopo Corso</a>
                 </li>
                 <li>
                     <a href="">Lezione Gratuita</a>
@@ -29,3 +29,4 @@
                 </li>
             </ul>
         </nav>
+
