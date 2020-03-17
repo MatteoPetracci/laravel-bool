@@ -74,6 +74,13 @@ nav .box-list ul li a {
 }
 
 .container .card-student {
+  padding: 20px;
   width: 50%;
+  border: 2px solid lightgrey;
+}
+
+.container .card-student img {
+  width: 120px;
+  border-radius: 5px;
 }
 
