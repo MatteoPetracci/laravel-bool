@@ -21,6 +21,8 @@ nav {
   align-items: center;
   padding: 10px;
   margin-bottom: 30px;
+  position: fixed;
+  width: 100%;
 }
 
 nav .box-img {
@@ -72,6 +74,7 @@ nav .box-list ul li a {
   text-align: center;
   font-size: 2em;
   color: #1b3c59;
+  padding-top: 150px;
 }
 
 .container {
@@ -80,6 +83,7 @@ nav .box-list ul li a {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 70px;
 }
 
 .container .card-student {

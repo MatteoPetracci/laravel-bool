@@ -22,6 +22,8 @@ nav {
     align-items: center;
     padding: 10px;
     margin-bottom: 30px;
+    position: fixed;
+    width: 100%;
     .box-img {
         width: 30%;
         img {
@@ -63,6 +65,7 @@ nav {
     text-align: center;
     font-size: 2em;
     color: #1b3c59;
+    padding-top: 150px;
 }
 
 .container {
@@ -71,6 +74,7 @@ nav {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 70px;
     .card-student {
         color: #1b3c59;
         padding: 18px;
