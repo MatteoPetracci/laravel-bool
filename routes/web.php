@@ -13,6 +13,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//    return view('welcome');
+// }); 
+
+// Route::get('/', function () {
+//    return view('welcome');
+// }); 
+
+
+// Setto la rotta
+// Primo argomento è l'url dove l'utende deve andare, come secondo argomento passo il controller e la funzione che mi serve
+// con ->name do un nome alla rotta
+
+//Home
+Route::get('/', 'StaticPageController@index')->name('static_page.home');
+
+//Student
+Route::get('/students', 'StudentController@index')->name('student.index');
+
+
