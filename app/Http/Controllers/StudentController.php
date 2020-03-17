@@ -24,7 +24,9 @@ class StudentController extends Controller
 
     public function show($id) 
     {
-        
+        if (!array_key_exists($id, $this->students)) {
+            abort('404');
+        }
     }
         // Configurazione tramite l'helper config 
         // Creo un file php nella cartella config
