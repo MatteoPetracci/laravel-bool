@@ -15,8 +15,9 @@ class StudentController extends Controller
 
     public function index() 
     {
-        $students = $this->students;
-        return view('students.index', compact('students'));
+        // $students = $this->students;
+        // return view('students.index', compact('students'));
+        return view('students.index');
     }
     
     // Questa funzione deve ricevere un dato in entrata per mostrare quello che mi serve in questo caso l'id
@@ -31,7 +32,7 @@ class StudentController extends Controller
     private function getStudents() {
         // Nome del file php e nome della chiave del mio array
         $this->students = config('students.allStudents');
-        dd($this->students);
+        // dd($this->students);
     }
 }
 

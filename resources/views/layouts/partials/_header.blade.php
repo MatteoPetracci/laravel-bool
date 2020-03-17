@@ -10,23 +10,32 @@
 <body>
     <div class="wrapper">
         <nav>
-            <ul>
-                <li>
-                    {{-- Uso la funzione route per andare a prendere la rotta che mi serve --}}
-                    <a href="{{route('static_page.home')}}">Home</a>
-                </li>
-                <li>
-                    <a href="">Corso</a>
-                </li>
-                <li>
-                    <a href="{{route('student.home')}}">Dopo Corso</a>
-                </li>
-                <li>
-                    <a href="">Lezione Gratuita</a>
-                </li>
-                <li>
-                    <a href="">Candidati ora</a>
-                </li>
-            </ul>
+            <div class="box-img">
+                <img src="https://www.boolean.careers/images/common/logo.png" alt="">
+            </div>
+            <div class="box-list">
+                <ul>
+                    <li>
+                        {{-- Uso la funzione route per andare a prendere la rotta che mi serve --}}
+                        <a href="{{route('static_page.home')}}">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Corso</a>
+                    </li>
+                    <li>
+                        {{-- Request è un oggetto di laravel e grazie al metodo getName prendo il nome della rotta che ho usato per accedere --}}
+                        {{-- Controllo se getName mi restituisce lo stesso nome della pagina poi con l'operatore ternario se è vero prende la classe active altrimenti  
+                        stringa vuota  quindi niente--}}
+                        <a class="{{(Request::route()->getName() == 'student.home') ? 'active' : ''}}" href="{{route('student.home')}}">Dopo Corso</a>
+                    </li>
+                    <li>
+                        <a href="">Lezione Gratuita</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn">Candidati ora</a>
+                    </li>
+                </ul>
+            </div>
+            
         </nav>
 
