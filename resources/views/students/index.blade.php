@@ -5,10 +5,14 @@
 <div class="container">
     @foreach (config('students.allStudents') as $item)
     <div class="card-student">
-        <img src="{{$item['poster']}}" alt="">
-        <h2>{{$item['name']}} ({{$item['age']}})</h2>
-        <p>Lavora da {{$item['company']}} come {{$item['role']}}</p>
-        <p>{{$item['description']}}</p>
+        <div class="student">
+            <img src="{{$item['poster']}}" alt="">
+            <div class="date-student">
+                <h3>{{$item['name']}} ({{$item['age']}})</h3>
+                <p>Lavora da {{$item['company']}} come {{$item['role']}}</p>
+            </div>
+        </div>
+        <p class="description">{{$item['description']}}</p>
     </div>
     @endforeach
 </div>

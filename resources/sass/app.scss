@@ -63,13 +63,13 @@ nav {
 
 .container {
     padding: 10px;
-    width: 75%;
+    width: 80%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     .card-student {
         padding: 15px;
-        width: 45%;
+        width: 47%;
         background-color: white;
         border-radius: 10px;
         margin: 15px;
@@ -78,5 +78,17 @@ nav {
             width: 120px;
             border-radius: 5px;
         }
+    .student {
+        display: flex;
+        .date-student {
+            padding: 15px;
+            p {
+                margin-top: 10px;
+            }
+        }
+    }
+    .description {
+        margin-top: 10px;
+    }
     }
 }

@@ -70,7 +70,7 @@ nav .box-list ul li a {
 
 .container {
   padding: 10px;
-  width: 75%;
+  width: 80%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -78,7 +78,7 @@ nav .box-list ul li a {
 
 .container .card-student {
   padding: 15px;
-  width: 45%;
+  width: 47%;
   background-color: white;
   border-radius: 10px;
   margin: 15px;
@@ -88,5 +88,21 @@ nav .box-list ul li a {
 .container .card-student img {
   width: 120px;
   border-radius: 5px;
+}
+
+.container .card-student .student {
+  display: flex;
+}
+
+.container .card-student .student .date-student {
+  padding: 15px;
+}
+
+.container .card-student .student .date-student p {
+  margin-top: 10px;
+}
+
+.container .card-student .description {
+  margin-top: 10px;
 }
 
