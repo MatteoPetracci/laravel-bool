@@ -15,7 +15,6 @@ a {
 
 nav {
     height: 90px;
-    border: 2px solid black;
     display: flex;
     align-items: center;
     padding: 10px;
@@ -33,9 +32,12 @@ nav {
             display: flex;
             list-style: none;
             li {
-                margin: 0 10px 0 60px;
+                margin: 0 10px 0 30px;
                 text-transform: uppercase;
                 font-size: .88em;
+                &:hover {
+                    border-bottom: 2px solid #61CE4E;
+                }
                 a {
                 color: rgb(27, 60, 89);
                 }
@@ -45,6 +47,9 @@ nav {
                     color: white;
                     border-radius: 5px;
                     font-size: 1.25em;
+                }
+                a {
+                    padding: 10px 15px;
                 }
             }
         }
