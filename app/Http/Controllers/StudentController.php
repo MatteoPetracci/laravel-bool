@@ -15,6 +15,7 @@ class StudentController extends Controller
 
     public function index() 
     {
+        $students = $this->students;
         return view('students.index', compact('students'));
     }
     
