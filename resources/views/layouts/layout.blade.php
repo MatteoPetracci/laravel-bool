@@ -11,7 +11,7 @@
 <footer>
     @yield('footer')
 </footer>
-
+@yield('scripts')
  @include('layouts.partials._footer')
 
  {{-- Questa pagina per essere vista in index ho bisogno di un extends --}}
