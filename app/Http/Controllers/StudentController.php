@@ -15,9 +15,30 @@ class StudentController extends Controller
 
     public function index() 
     {
-        // $students = $this->students;
+        $students = $this->students;
+        // array vuoto dove pusho in seguito l'età di ogni studente 
+        $ageStudents = [];
+        // Ciclo su l'array dove ho tutti gli studenti
+        foreach ($students as $student) {
+            // se l'età dello studente non è gia presente nell'array dove ho le età 
+            // Pusho nell'array
+            if(!in_array($student['age'], $ageStudents)) {
+                $ageStudents[] = $student['age'];
+            }
+        }
+        
+        //Per visualizzare i file nella index creo un array che contiene le variabile che posso usare nella index
+        // Passo come secondo argomento la variabile che contiene l'età dello studente
+
+        $data = [
+            'ages' => $ageStudents,
+            'students' => $students
+        ];
         // return view('students.index', compact('students'));
-        return view('students.index');
+        // $ageStudent = $this->students;
+        // return view('students.index', $ageStudent);
+        return view('students.index', $data);
+
     }
     
     // Questa funzione deve ricevere un dato in entrata per mostrare quello che mi serve in questo caso l'id

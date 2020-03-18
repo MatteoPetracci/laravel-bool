@@ -2,8 +2,16 @@
 @extends('layouts.layout')
 @section('main')
 {{-- Posso usare config anche per ciclarci dentro --}}
+<div class="filter-age">
+    <select name="filter" id="filter_age">
+        <option value="all">All</option>
+        @foreach ($ages as $oneAge)
+            <option value="{{$oneAge}}">{{$oneAge}}</option>
+        @endforeach
+    </select>
+</div>
 <div class="container">
-    @foreach (config('students.allStudents') as $key => $item)
+    @foreach ($students as $key => $item)
     <div class="card-student">
         <div class="student">
             {{-- Inserire il nome della rotta come primo argomento --}}

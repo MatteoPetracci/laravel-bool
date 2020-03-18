@@ -77,6 +77,12 @@ nav .box-list ul li a {
   padding-top: 150px;
 }
 
+.filter-age {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
 .container {
   padding: 10px;
   width: 80%;
