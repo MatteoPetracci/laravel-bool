@@ -29898,7 +29898,19 @@ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"
 $(document).ready(function () {
   // Al click sulla select stampo in console il valore della select cliccata
   $('#filter_age').change(function () {
-    console.log($(this).val());
+    $.ajax({
+      'url': window.location.protocol + '//' + window.location.host + '/api/student/age',
+      'method': 'POST',
+      'data': {
+        'ages': $(this).val()
+      },
+      'success': function success(data) {
+        console.log(data);
+      },
+      'error': function error() {
+        console.log('error');
+      }
+    });
   });
 });
 

@@ -7,13 +7,23 @@ use Illuminate\Http\Request;
 
 class StudentController extends Controller
 {
+    // public function age(Request $request)
+    // {
+    //     // salvo i dati che arrivano dalla request in una variabile 
+    //     //array php da trasformare in json
+    //     $data = $request->all();
+
+    //     dd($data);
+        
+    //     // $ages = config('students.ages');
+    //     // $student = config('students.students');
+    //     // Stampo con postman
+    // }
     public function age(Request $request)
     {
-        // salvo i dati che arrivano dalla request in una variabile 
-        //array php da trasformare in json
         $data = $request->all();
+        
         dd($data);
-        // Stampo con postman
     }
 }
 

@@ -22,5 +22,5 @@ use Illuminate\Support\Facades\Route;
 Route::namespace('Api')->group(function() {
 
 //  Indirizzo per chiamare l'api più segnaposto
-Route::post('student/age/{age}', 'StudentController@age');
+Route::post('student/age/', 'StudentController@age');
 });
