@@ -7,9 +7,9 @@ use Illuminate\Http\Request;
 
 class StudentController extends Controller
 {
-    public function age($age)
+    public function age(Request $request)
     {
-        dd($age);
+        dd( $request);
         // Stampo con postman
     }
 }
