@@ -10,5 +10,6 @@ class StudentController extends Controller
     public function age($age)
     {
         dd($age);
+        // Stampo con postman
     }
 }
