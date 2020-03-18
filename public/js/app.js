@@ -29896,7 +29896,10 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
 $(document).ready(function () {
-  alert('ciao');
+  // Al click sulla select stampo in console il valore della select cliccata
+  $('#filter_age').change(function () {
+    console.log($(this).val());
+  });
 });
 
 /***/ }),

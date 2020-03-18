@@ -14,7 +14,6 @@ class StudentController extends Controller
         $data = $request->all();
         dd($data);
         // Stampo con postman
-
     }
 }
 
