@@ -18,6 +18,9 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
+// La rotta prende in questo caso la cartella che ho creato Api crea un gruppo con dentro le rotte
+Route::namespace('Api')->group(function() {
 
-// Indirizzo per chiamare l'api più segnaposto
+//  Indirizzo per chiamare l'api più segnaposto
 Route::post('student/age/{age}', 'StudentController@age');
+});
