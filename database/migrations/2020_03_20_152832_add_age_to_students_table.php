@@ -30,3 +30,4 @@ class AddAgeToStudentsTable extends Migration
         });
     }
 }
+ 

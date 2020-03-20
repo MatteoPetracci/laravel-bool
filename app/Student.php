@@ -14,6 +14,8 @@ class Student extends Model
         'age',
         'company',
         'role',
-        'description'
+        'description',
+        'created_at',
+        'updated_at'
     ];
 }

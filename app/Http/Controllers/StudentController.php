@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\Request;
+use App\Student;
 
 class StudentController extends Controller
 {
@@ -11,6 +13,8 @@ class StudentController extends Controller
     public function __construct()
     {
         $this->getStudents();
+        $this->students = Student::all();
+        dd($this->students );
     }
 
     public function index() 
