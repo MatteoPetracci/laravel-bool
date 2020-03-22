@@ -7,11 +7,14 @@
 body {
   font-family: Rubik, sans-serif;
   font-size: 16px;
-  background-color: #E8EBF1;
 }
 
 a {
   text-decoration: none;
+}
+
+main {
+  background-color: #E8EBF1;
 }
 
 nav {
@@ -68,6 +71,48 @@ nav .box-list ul li a.btn {
 
 nav .box-list ul li a {
   padding: 10px 15px;
+}
+
+.container-jumbo {
+  padding-top: 190px;
+  width: 72%;
+  margin: auto;
+}
+
+.jumbo {
+  display: flex;
+  justify-content: center;
+}
+
+.jumbo .item {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  color: #1b3c59;
+}
+
+.jumbo .item h1 {
+  font-size: 55px;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+
+.jumbo .item p {
+  margin-bottom: 20px;
+}
+
+.jumbo .item ul li {
+  line-height: 25px;
+}
+
+.jumbo .item-img {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.jumbo .item-img img {
+  width: 90%;
 }
 
 .ex-student {

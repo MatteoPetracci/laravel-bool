@@ -4,6 +4,7 @@
 
 <header>
     @yield('header')
+    @yield('jumbo')
 </header>
 <main>
     @yield('main')

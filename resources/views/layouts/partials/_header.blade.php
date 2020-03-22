@@ -40,5 +40,4 @@
             </div>
             
         </nav>
-        <h2 class="ex-student">I nostri ex studenti su LinkedIn</h2>
         

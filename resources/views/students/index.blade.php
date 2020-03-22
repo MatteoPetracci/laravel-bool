@@ -1,6 +1,7 @@
 {{-- Index di students --}}
 @extends('layouts.layout')
 @section('main')
+<h2 class="ex-student">I nostri ex studenti su LinkedIn</h2>
 {{-- Posso usare config anche per ciclarci dentro --}}
 <div class="filter-age">
     <select name="filter" id="filter_age">

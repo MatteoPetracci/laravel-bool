@@ -13,8 +13,8 @@ class StudentController extends Controller
     public function __construct()
     {
         $this->getStudents();
-        $this->students = Student::all();
-        dd($this->students );
+        // $this->students = Student::all();
+        // dd($this->students);
     }
 
     public function index() 
